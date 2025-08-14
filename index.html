@@ -1,62 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+  <body>
+    <header class="page">
+      <div class="container page-container">
+        <nav class="page-menu">
+          <a class="logo page-logo" href="./index.html">
+            Web<span class="page-logo-part">Studio</span>
+          </a>
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a class="menu-list-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-list-link" href="">Portfolio</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-list-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="page-contacts">
+          <ul class="contacts-list">
+            <li class="contacts-list-item">
+              <a class="contacts-list-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-list-item">
+              <a class="contacts-list-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <button class="burger-btn" type="button" data-mobile-open>
+          <svg class="burger-icon" class="" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-icon"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-mobile>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" type="button" data-mobile-close>
+            <svg class="mobile-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-contacts">
+            <ul class="mobile-contacts-list">
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-social">
+            <ul class="mobile-social-list">
+              <li class="mobile-social-item">
+                <a class="mobile-social-link" href="" target="_blank">
+                  <svg class="mobile-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a class="mobile-social-link" href="" target="_blank">
+                  <svg class="mobile-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a class="mobile-social-link" href="" target="_blank">
+                  <svg class="mobile-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-item">
+                <a class="mobile-social-link" href="" target="_blank">
+                  <svg class="mobile-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
-<body>
-  <header class="page">
-    <div class="container page-container">
-      <nav class="page-menu">
-        <a class="logo page-logo" href="./index.html">
-          Web<span class="page-logo-part">Studio</span>
-        </a>
-        <ul class="menu-list">
-          <li class="menu-list-item">
-            <a class="menu-list-link current" href="./index.html">Studio</a>
-          </li>
-          <li class="menu-list-item">
-            <a class="menu-list-link" href="">Portfolio</a>
-          </li>
-          <li class="menu-list-item">
-            <a class="menu-list-link" href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="page-contacts">
-        <ul class="contacts-list">
-          <li class="contacts-list-item">
-            <a class="contacts-list-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="contacts-list-item">
-            <a class="contacts-list-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-          </li>
-        </ul>
-      </address>
-    </div>
-  </header>
-
-  <main class="service">
-    <section class="service-banner">
+    <main class="service">
+      <!-- <section class="service-banner">
       <div class="container service-container">
         <h1 class="service-title">Effective Solutions for Your Business</h1>
         <button class="service-order" type="button" data-modal-open>Order Service</button>
       </div>
-    </section>
+    </section> -->
 
-    <section class="section service-benefits">
+      <!-- <section class="section service-benefits">
       <div class="container">
         <h2 class="benefits-title visually-hidden">Benefits</h2>
         <ul class="benefits-list">
@@ -110,9 +194,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
-    <section class="section service-team">
+      <!-- <section class="section service-team">
       <div class="container">
         <h2 class="team-title">Our Team</h2>
         <ul class="team-members">
@@ -269,9 +353,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
-    <section class="section service-portfolio">
+      <!-- <section class="section service-portfolio">
       <div class="container">
         <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-projects">
@@ -382,10 +466,10 @@
           </li>
         </ul>
       </div>
-    </section>
-  </main>
+    </section> -->
+    </main>
 
-  <footer class="copyright">
+    <!-- <footer class="copyright">
     <div class="container copyright-container">
       <div class="copyright-block">
         <a class="logo copyright-logo" href="./index.html">
@@ -444,9 +528,9 @@
         </form>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
-  <div class="backdrop" data-modal>
+    <!-- <div class="backdrop" data-modal>
     <div class="modal">
       <button type="button" class="modal-close" data-modal-close>
         <svg class="modal-close-icon" width="8" height="8">
@@ -503,9 +587,9 @@
         <button class="modal-form-btn" type="submit">Send</button>
       </form>
     </div>
-  </div>
+  </div> -->
 
-  <script src="./js/modal.js"></script>
-</body>
-
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
 </html>
