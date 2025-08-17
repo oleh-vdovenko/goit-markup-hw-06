@@ -725,6 +725,12 @@ button.service-order {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .benefits-list {
     flex-direction: row;
@@ -774,6 +780,12 @@ button.service-order {
 .service-team {
   background-color: #f4f4fd;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container-team {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
 
 .team-title {
   font-size: 36px;
@@ -788,8 +800,6 @@ button.service-order {
   display: flex;
   flex-direction: column;
   gap: 72px;
-  padding-left: 12px;
-  padding-right: 12px;
 }
 .team-members-item {
   background-color: #ffffff;
@@ -842,8 +852,6 @@ button.service-order {
     flex-wrap: wrap;
     gap: 64px;
     column-gap: 24px;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 @media screen and (min-width: 1158px) {
