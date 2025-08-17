@@ -1114,5 +1114,15 @@ button.service-order {
   .copyright-subscribe {
     margin-left: auto;
   }
+  .copyright-subscribe-btn {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .copyright-subscribe-btn:hover,
+  .copyright-subscribe-btn:focus {
+    background-color: #31d0aa;
+  }
 }
 /* -- end footer -- */
